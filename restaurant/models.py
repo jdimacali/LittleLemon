@@ -14,7 +14,7 @@ class Menu(models.Model):
 class Booking(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255)
-    no_of_guests = models.IntegerField(max_length=6)
+    no_of_guests = models.IntegerField()
     booking_date = models.DateTimeField()
 
     def __str__(self):
